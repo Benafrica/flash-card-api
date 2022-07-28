@@ -41,9 +41,9 @@ const main = async () => {
 
   apolloServer.applyMiddleware({ app });
 
-  app.get("/", (_req, res) => res.send("you have not screwed up!"));
+  app.get("/", (_req, res) => res.send("congrates! am now running"));
 
-  const PORT = process.env.PORT || 8001;
+  const PORT = process.env.PORT || 5000;
   app.listen(PORT, () => console.log(`server started on port ${PORT}`));
 };
 
